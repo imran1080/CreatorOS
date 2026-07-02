@@ -1,24 +1,24 @@
+import "./Navbar.css";
+
 function Navbar() {
   return (
-    <header>
-      <div className="container">
-        <nav>
-          <div className="logo">CreatorOS</div>
+    <header className="navbar">
+      <div className="container nav-container">
 
+        <h2 className="logo">🚀 CreatorOS</h2>
+
+        <nav>
           <ul className="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
-
-          <button className="login-btn">
-            Login
-          </button>
         </nav>
+
       </div>
     </header>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
