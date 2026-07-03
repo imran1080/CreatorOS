@@ -1,4 +1,4 @@
-import "./Dashboard.css";
+import "./RecentActivity.css";
 
 function RecentActivity() {
   return (

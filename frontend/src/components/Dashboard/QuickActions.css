@@ -1,0 +1,37 @@
+.quick-actions{
+    margin-bottom:40px;
+}
+
+.quick-actions h2{
+    margin-bottom:20px;
+}
+
+.quick-actions-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.action-btn{
+    background:#1e293b;
+    color:white;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    padding:18px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.action-btn:hover{
+    background:#38bdf8;
+    transform:translateY(-4px);
+}
+
+@media (max-width:768px){
+
+    .quick-actions-grid{
+        grid-template-columns:1fr;
+    }
+
+}

@@ -1,22 +1,34 @@
-import "./Dashboard.css";
+import "./DashboardHeader.css";
+import { FaBell, FaSearch } from "react-icons/fa";
 
 function DashboardHeader() {
+  const today = new Date().toLocaleDateString("en-US", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+
   return (
-    <div className="dashboard-header">
+    <header className="dashboard-header">
+
       <div>
         <h1>Welcome back, Imran 👋</h1>
-        <p>Manage your AI tools and create content faster than ever.</p>
+        <p>{today}</p>
       </div>
 
       <div className="header-right">
-        <input
-          type="text"
-          placeholder="🔍 Search..."
-          className="search-input"
-        />
+
+        <div className="search-box">
+          <FaSearch />
+          <input
+            type="text"
+            placeholder="Search..."
+          />
+        </div>
 
         <button className="notification-btn">
-          🔔
+          <FaBell />
         </button>
 
         <div className="user-profile">
@@ -24,10 +36,15 @@ function DashboardHeader() {
             I
           </div>
 
-          <span>Imran</span>
+          <div>
+            <strong>Imran</strong>
+            <p>Creator</p>
+          </div>
         </div>
+
       </div>
-    </div>
+
+    </header>
   );
 }
 

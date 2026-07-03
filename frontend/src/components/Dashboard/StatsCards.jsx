@@ -1,4 +1,4 @@
-import "./Dashboard.css";
+import "./StatsCards.css";
 
 function StatsCards() {
   return (

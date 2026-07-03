@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   FaHome,
   FaPen,
@@ -6,6 +6,7 @@ import {
   FaCalendarAlt,
   FaCog,
 } from "react-icons/fa";
+import "./Sidebar.css";
 
 function Sidebar() {
   return (
@@ -13,34 +14,34 @@ function Sidebar() {
       <h2>CreatorOS</h2>
 
       <ul className="sidebar-menu">
-        <li className="active">
-          <Link to="/dashboard">
+        <li>
+          <NavLink to="/dashboard">
             <FaHome /> Dashboard
-          </Link>
+          </NavLink>
         </li>
 
         <li>
-          <Link to="/ai-writer">
+          <NavLink to="/ai-writer">
             <FaPen /> AI Script Writer
-          </Link>
+          </NavLink>
         </li>
 
         <li>
-          <Link to="/thumbnail">
+          <NavLink to="/thumbnail">
             <FaImage /> Thumbnail Generator
-          </Link>
+          </NavLink>
         </li>
 
         <li>
-          <Link to="/planner">
+          <NavLink to="/planner">
             <FaCalendarAlt /> Content Planner
-          </Link>
+          </NavLink>
         </li>
 
         <li>
-          <Link to="/settings">
+          <NavLink to="/settings">
             <FaCog /> Settings
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </aside>

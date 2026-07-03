@@ -1,4 +1,4 @@
-import "./Dashboard.css";
+import "./QuickActions.css";
 
 function QuickActions() {
   return (
